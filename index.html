@@ -12,55 +12,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
 
 :root {
-  --primary: #16a34a;
-  --primary-dark: #15803d;
-  --secondary: #ff6b35;
-  --background: #f5f7f6;
-  --card: #ffffff;
-  --text: #1f2937;
-  --muted: #6b7280;
-  --radius: 18px;
+  --primary:#16a34a;
+  --primary-dark:#15803d;
+  --secondary:#ff6b35;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --radius:18px;
 }
 
-* {
-  box-sizing: border-box;
+*{
+  box-sizing:border-box;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: 'Cairo', sans-serif;
-  background: linear-gradient(135deg,#f0fdf4,#f8fafc);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  color: var(--text);
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:'Cairo',sans-serif;
+  background:linear-gradient(135deg,#f0fdf4,#f8fafc);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  color:var(--text);
 }
 
-.container {
-  width: 100%;
-  max-width: 430px;
-  background: var(--card);
-  padding: 28px 20px;
-  border-radius: var(--radius);
-  box-shadow: 0 15px 35px rgba(0,0,0,.08);
-  text-align: center;
-  animation: show .5s ease;
+.container{
+  width:100%;
+  max-width:430px;
+  background:var(--card);
+  padding:28px 20px;
+  border-radius:var(--radius);
+  box-shadow:0 15px 35px rgba(0,0,0,.08);
+  text-align:center;
+  animation:show .5s ease;
 }
 
-@keyframes show {
-  from {
+@keyframes show{
+  from{
     opacity:0;
     transform:translateY(20px);
   }
-  to {
+  to{
     opacity:1;
     transform:translateY(0);
   }
 }
 
-.header-icon {
+.header-icon{
   width:70px;
   height:70px;
   margin:auto;
@@ -72,27 +71,27 @@ body {
   font-size:34px;
 }
 
-h1 {
+h1{
   margin:18px 0 10px;
   font-size:25px;
   color:var(--primary-dark);
   line-height:1.5;
 }
 
-.subtitle {
+.subtitle{
   font-size:15px;
   color:var(--muted);
   line-height:1.8;
   margin-bottom:22px;
 }
 
-.jobs {
+.jobs{
   display:flex;
   flex-direction:column;
   gap:12px;
 }
 
-.job-btn {
+.job-btn{
   display:block;
   padding:15px;
   border-radius:14px;
@@ -106,16 +105,16 @@ h1 {
 }
 
 .job-btn:hover,
-.job-btn:focus {
+.job-btn:focus{
   transform:translateY(-3px);
   background:linear-gradient(135deg,var(--primary-dark),var(--primary));
 }
 
-.job-btn.special {
+.job-btn.special{
   background:linear-gradient(135deg,var(--secondary),#ef4444);
 }
 
-.trust {
+.trust{
   margin-top:22px;
   padding:12px;
   background:#f0fdf4;
@@ -125,7 +124,7 @@ h1 {
   font-weight:700;
 }
 
-footer {
+footer{
   margin-top:20px;
   font-size:12px;
   color:#777;
@@ -133,11 +132,11 @@ footer {
 }
 
 @media(max-width:400px){
-  h1 {
+  h1{
     font-size:22px;
   }
 
-  .job-btn {
+  .job-btn{
     font-size:14px;
     padding:13px;
   }
@@ -163,3 +162,40 @@ footer {
 </p>
 
 <div class="jobs">
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">نجار</a>
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">سباك</a>
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">كهربائي</a>
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">عامل بناء</a>
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">سائق خاص</a>
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">سائق نقل ثقيل</a>
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">عامل مستودع</a>
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">عامل مغسلة سيارات</a>
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">عامل نظافة</a>
+
+<a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn special">أبحث عن وظيفة أخرى</a>
+
+</div>
+
+<div class="trust">
+✅ أكثر من 12,000 شخص سجّلوا هذا الشهر
+<br>
+✅ تسجيل سريع ومجاني
+</div>
+
+<footer>
+جميع الفرص متاحة حسب احتياج الشركاء وسيتم التواصل عند توفر الوظائف المناسبة
+</footer>
+
+</main>
+
+</body>
+</html>
