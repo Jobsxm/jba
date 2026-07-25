@@ -1,126 +1,165 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="سجّل الآن للحصول على وظيفة مناسبة لك في السعودية. أكثر من 12,000 شخص سجّلوا خلال هذا الشهر.">
-  <title>سجّل الآن للحصول على وظيفة في السعودية</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ✅ OG Tags لتحسين عرض الرابط في فيسبوك -->
-  <meta property="og:title" content="سجّل الآن للحصول على وظيفة في السعودية" />
-  <meta property="og:description" content="اختر الوظيفة المناسبة لك من بين العديد من الفرص – وسنقوم بالتواصل معك فوراً!" />
-  <meta property="og:image" content="https://yourdomain.com/job-banner.jpg" />
-  <meta property="og:url" content="https://smrturl.co/a/sa7af109433/12949" />
-  <meta property="og:type" content="website" />
+<title>وظائف في السعودية - سجل الآن</title>
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+<meta name="description" content="سجل للحصول على فرص عمل مناسبة في السعودية. اختر الوظيفة المناسبة وسيتم التواصل معك.">
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Cairo', sans-serif;
-      background: #f9f9f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-    }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
 
-    .wrapper {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 24px 16px;
-      width: 95%;
-      max-width: 420px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      animation: fadeIn 0.8s ease-in-out;
-    }
+:root {
+  --primary: #16a34a;
+  --primary-dark: #15803d;
+  --secondary: #ff6b35;
+  --background: #f5f7f6;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --radius: 18px;
+}
 
-    h1 {
-      color: #2e7d32;
-      font-size: 22px;
-      margin-bottom: 12px;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    p {
-      color: #333;
-      font-size: 15px;
-      margin-bottom: 16px;
-      line-height: 1.6;
-    }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg,#f0fdf4,#f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: var(--text);
+}
 
-    .btn-group {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+.container {
+  width: 100%;
+  max-width: 430px;
+  background: var(--card);
+  padding: 28px 20px;
+  border-radius: var(--radius);
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+  text-align: center;
+  animation: show .5s ease;
+}
 
-    .job-btn {
-      background: linear-gradient(to right, #66bb6a, #43a047);
-      color: white;
-      padding: 13px;
-      border: none;
-      border-radius: 10px;
-      font-size: 15px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
+@keyframes show {
+  from {
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
 
-    .job-btn:hover {
-      background: linear-gradient(to right, #43a047, #388e3c);
-      transform: scale(1.02);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    }
+.header-icon {
+  width:70px;
+  height:70px;
+  margin:auto;
+  border-radius:50%;
+  background:#dcfce7;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:34px;
+}
 
-    .job-btn.special {
-      background: linear-gradient(to right, #ff8a65, #ff5722);
-    }
+h1 {
+  margin:18px 0 10px;
+  font-size:25px;
+  color:var(--primary-dark);
+  line-height:1.5;
+}
 
-    footer {
-      margin-top: 20px;
-      font-size: 13px;
-      color: #777;
-    }
+.subtitle {
+  font-size:15px;
+  color:var(--muted);
+  line-height:1.8;
+  margin-bottom:22px;
+}
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+.jobs {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
 
-    @media (max-width: 400px) {
-      h1 { font-size: 20px; }
-      .job-btn { font-size: 14px; padding: 12px; }
-    }
-  </style>
+.job-btn {
+  display:block;
+  padding:15px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--primary),#22c55e);
+  color:white;
+  text-decoration:none;
+  font-weight:700;
+  font-size:16px;
+  transition:.25s ease;
+  box-shadow:0 5px 15px rgba(22,163,74,.2);
+}
+
+.job-btn:hover,
+.job-btn:focus {
+  transform:translateY(-3px);
+  background:linear-gradient(135deg,var(--primary-dark),var(--primary));
+}
+
+.job-btn.special {
+  background:linear-gradient(135deg,var(--secondary),#ef4444);
+}
+
+.trust {
+  margin-top:22px;
+  padding:12px;
+  background:#f0fdf4;
+  border-radius:12px;
+  color:var(--primary-dark);
+  font-size:14px;
+  font-weight:700;
+}
+
+footer {
+  margin-top:20px;
+  font-size:12px;
+  color:#777;
+  line-height:1.6;
+}
+
+@media(max-width:400px){
+  h1 {
+    font-size:22px;
+  }
+
+  .job-btn {
+    font-size:14px;
+    padding:13px;
+  }
+}
+</style>
+
 </head>
+
 <body>
 
-  <div class="wrapper">
-    <h1>سجّل الآن للحصول على وظيفة في السعودية</h1>
-    <p><strong>اختر نوع الوظيفة واضغط للتقديم مباشرة:</strong></p>
+<main class="container">
 
-    <div class="btn-group">
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">نجار</a>
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">سباك</a>
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">كهربائي</a>
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">عامل بناء</a>
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">سائق خاص</a>
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">سائق نقل ثقيل</a>
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">عامل مستودع</a>
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">عامل مغسلة سيارات</a>
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn">عامل نظافة</a>
-      <a href="https://app.hawktrk.com/click?pid=2&offer_id=14034&sub2=u494361&sub5=s1SUBID1HERE" class="job-btn special">أبحث عن وظيفة أخرى</a>
-    </div>
+<div class="header-icon">
+💼
+</div>
 
-    <p style="font-size: 14px; color: #2e7d32; margin-top: 18px;"><strong>أكثر من 12,000 شخص سجّلوا خلال هذا الشهر!</strong></p>
+<h1>
+سجّل الآن للحصول على وظيفة في السعودية
+</h1>
 
-    <footer>
-      جميع الفرص متاحة حسب احتياج الشركاء – سيتم التواصل عند توفر الوظائف المناسبة
-    </footer>
-  </div>
+<p class="subtitle">
+اختر نوع الوظيفة المناسبة لك واضغط للتقديم مباشرة
+</p>
 
-</body>
-</html>
+<div class="jobs">
